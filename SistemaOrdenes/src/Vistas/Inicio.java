@@ -5,7 +5,7 @@
  */
 package Vistas;
 
-import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -331,111 +331,13 @@ public class Inicio extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel17.setText("Detalle de Entrega");
 
+        DefaultTableModel modelDetalleOrdenes = new DefaultTableModel();
         Inicio_TBL_DetalleOrden.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2"
+
             }
         ));
         jScrollPane2.setViewportView(Inicio_TBL_DetalleOrden);

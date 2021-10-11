@@ -7,7 +7,6 @@ package Controlador;
 
 import Modelo.DataViewObject;
 import Vistas.Inicio;
-import Vistas.QuitarProducto;
 import Vistas.RegistroCliente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,22 +19,19 @@ public class Controles implements ActionListener {
 
     Inicio inicio = new Inicio();
     RegistroCliente registroCliente = new RegistroCliente();
-    QuitarProducto quitarProducto = new QuitarProducto();
     DataViewObject dataViewObject = new DataViewObject();
     ControllerInicio controllerInicio = new ControllerInicio();
     ControllerRegistroCliente controllerRegistroCliente = new ControllerRegistroCliente();
-    ControllerQuitarProducto controllerQuitarProducto = new ControllerQuitarProducto();
     ControllerProducto controllerProducto = new ControllerProducto();
 
-    public Controles(Inicio i, RegistroCliente rc, QuitarProducto qp, DataViewObject dvo, ControllerInicio ci,
-            ControllerRegistroCliente crc, ControllerQuitarProducto cqp, ControllerProducto cp) {
+    public Controles(Inicio i, RegistroCliente rc, DataViewObject dvo, ControllerInicio ci,
+            ControllerRegistroCliente crc, ControllerProducto cp) {
         this.inicio = i;
         this.registroCliente = rc;
-        this.quitarProducto = qp;
+
         this.dataViewObject = dvo;
         this.controllerInicio = ci;
         this.controllerRegistroCliente = crc;
-        this.controllerQuitarProducto = cqp;
         this.controllerProducto = cp;
 
         //Inicio
@@ -49,11 +45,6 @@ public class Controles implements ActionListener {
         //Agregar Cliente
         this.registroCliente.Registro_BTN_Cancelar.addActionListener(this);
         this.registroCliente.Registro_BTN_CrearNuevo.addActionListener(this);
-
-        //Quitar Producto
-        this.quitarProducto.Quitar_BTN_Cerrar.addActionListener(this);
-        this.quitarProducto.Quitar_BTN_Buscar.addActionListener(this);
-        this.quitarProducto.Quitar_BTN_Eliminar.addActionListener(this);
 
         //Productos
         this.inicio.Inicio_BTN_Hamburguesa.addActionListener(this);
@@ -95,17 +86,6 @@ public class Controles implements ActionListener {
         }
         if (e.getSource() == registroCliente.Registro_BTN_CrearNuevo) {
             controllerRegistroCliente.CrearClienteNuevo();
-        }
-
-        //Quitar Producto
-        if (e.getSource() == quitarProducto.Quitar_BTN_Cerrar) {
-            controllerQuitarProducto.CerrarQuitarProducto();
-        }
-        if (e.getSource() == quitarProducto.Quitar_BTN_Buscar) {
-            controllerQuitarProducto.BuscarQuitarProducto();
-        }
-        if (e.getSource() == quitarProducto.Quitar_BTN_Eliminar) {
-            controllerQuitarProducto.EliminarProcto();
         }
 
         //Producto

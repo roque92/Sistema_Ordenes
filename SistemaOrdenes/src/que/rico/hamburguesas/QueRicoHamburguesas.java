@@ -8,12 +8,10 @@ package que.rico.hamburguesas;
 import Controlador.Controles;
 import Controlador.ControllerInicio;
 import Controlador.ControllerProducto;
-import Controlador.ControllerQuitarProducto;
 import Controlador.ControllerRegistroCliente;
 import Modelo.DataAccessObject;
 import Modelo.DataViewObject;
 import Vistas.Inicio;
-import Vistas.QuitarProducto;
 import Vistas.RegistroCliente;
 
 /**
@@ -31,16 +29,14 @@ public class QueRicoHamburguesas {
         
         Inicio inicio = new Inicio();
         RegistroCliente registroClientes = new RegistroCliente();
-        QuitarProducto quitarProducto = new QuitarProducto();
         DataViewObject dataViewObject = new DataViewObject();
         DataAccessObject dataAccessObject = new DataAccessObject();
         
         
-        ControllerInicio controllerInicio = new ControllerInicio(inicio, registroClientes, quitarProducto, dataViewObject, dataAccessObject);
+        ControllerInicio controllerInicio = new ControllerInicio(inicio, registroClientes, dataViewObject, dataAccessObject);
         ControllerRegistroCliente controllerRegistroCliente = new ControllerRegistroCliente(registroClientes, dataViewObject, dataAccessObject, inicio, controllerInicio);
-        ControllerQuitarProducto controllerQuitarProducto = new ControllerQuitarProducto(quitarProducto);
         ControllerProducto controllerProducto = new ControllerProducto(dataViewObject, dataAccessObject, inicio, controllerInicio);
-        Controles controles = new Controles(inicio, registroClientes, quitarProducto, dataViewObject, controllerInicio, controllerRegistroCliente, controllerQuitarProducto, controllerProducto);
+        Controles controles = new Controles(inicio, registroClientes, dataViewObject, controllerInicio, controllerRegistroCliente, controllerProducto);
 
         
         

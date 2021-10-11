@@ -8,7 +8,6 @@ package Controlador;
 import Modelo.DataAccessObject;
 import Modelo.DataViewObject;
 import Vistas.Inicio;
-import Vistas.QuitarProducto;
 import Vistas.RegistroCliente;
 import javax.swing.JOptionPane;
 import org.apache.commons.lang.NumberUtils;
@@ -23,14 +22,12 @@ public class ControllerInicio {
 
     Inicio inicio = new Inicio();
     RegistroCliente registroCliente = new RegistroCliente();
-    QuitarProducto quitarProducto = new QuitarProducto();
     DataViewObject dataViewObject = new DataViewObject();
     DataAccessObject dataAccessObject = new DataAccessObject();
 
-    public ControllerInicio(Inicio i, RegistroCliente rc, QuitarProducto qp, DataViewObject dvo, DataAccessObject dao) {
+    public ControllerInicio(Inicio i, RegistroCliente rc, DataViewObject dvo, DataAccessObject dao) {
         this.inicio = i;
         this.registroCliente = rc;
-        this.quitarProducto = qp;
         this.dataViewObject = dvo;
         this.dataAccessObject = dao;
 
