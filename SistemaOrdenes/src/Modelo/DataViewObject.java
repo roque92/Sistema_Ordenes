@@ -21,7 +21,7 @@ public class DataViewObject {
     //----From Ordenes
     private String fromOrdenes_fecha, fromOrdenes_producto;
     private double fromOrdenes_precio, fromOrdenes_TotalOrden;
-    private int fromOrdenes_telefono, fromOrdenes_NumeroOrden ;
+    private int fromOrdenes_telefono, fromOrdenes_NumeroOrden, from_Ordenes_IdOrden ;
     
     
     //--------------------Datos que van hacia la base de datos.
@@ -221,7 +221,15 @@ public class DataViewObject {
         this.fromOrdenes_TotalOrden = fromOrdenes_TotalOrden;
     }
 
-    public DataViewObject(String fromCliente_nombre, String fromCliente_apellido, String fromCliente_direccion, String fromCliente_correo, String fromCliente_nit, int fromCliente_telefono, String fromOrdenes_fecha, String fromOrdenes_producto, double fromOrdenes_precio, double fromOrdenes_TotalOrden, int fromOrdenes_telefono, int fromOrdenes_NumeroOrden, String toClientes_nombre, String toClientes_apellido, String toClientes_direccion, String toClientes_correo, String toClientes__nit, int toClientes_telefono, String toOrdenes_fecha, String toOrdenes_producto, double toOrdenes_precio, int toOrdenes_telefono, int toOrdenes_NumeroOrden) {
+    public int getFrom_Ordenes_IdOrden() {
+        return from_Ordenes_IdOrden;
+    }
+
+    public void setFrom_Ordenes_IdOrden(int from_Ordenes_IdOrden) {
+        this.from_Ordenes_IdOrden = from_Ordenes_IdOrden;
+    }
+
+    public DataViewObject(String fromCliente_nombre, String fromCliente_apellido, String fromCliente_direccion, String fromCliente_correo, String fromCliente_nit, int fromCliente_telefono, String fromOrdenes_fecha, String fromOrdenes_producto, double fromOrdenes_precio, double fromOrdenes_TotalOrden, int fromOrdenes_telefono, int fromOrdenes_NumeroOrden, int from_Ordenes_IdOrden, String toClientes_nombre, String toClientes_apellido, String toClientes_direccion, String toClientes_correo, String toClientes__nit, int toClientes_telefono, String toOrdenes_fecha, String toOrdenes_producto, double toOrdenes_precio, int toOrdenes_telefono, int toOrdenes_NumeroOrden) {
         this.fromCliente_nombre = fromCliente_nombre;
         this.fromCliente_apellido = fromCliente_apellido;
         this.fromCliente_direccion = fromCliente_direccion;
@@ -234,6 +242,7 @@ public class DataViewObject {
         this.fromOrdenes_TotalOrden = fromOrdenes_TotalOrden;
         this.fromOrdenes_telefono = fromOrdenes_telefono;
         this.fromOrdenes_NumeroOrden = fromOrdenes_NumeroOrden;
+        this.from_Ordenes_IdOrden = from_Ordenes_IdOrden;
         this.toClientes_nombre = toClientes_nombre;
         this.toClientes_apellido = toClientes_apellido;
         this.toClientes_direccion = toClientes_direccion;
@@ -246,11 +255,8 @@ public class DataViewObject {
         this.toOrdenes_telefono = toOrdenes_telefono;
         this.toOrdenes_NumeroOrden = toOrdenes_NumeroOrden;
     }
-    
-    
-
-    
-    
+      
+     
 
     public DataViewObject() {
     }

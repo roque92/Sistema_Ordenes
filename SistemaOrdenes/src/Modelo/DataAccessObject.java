@@ -111,14 +111,14 @@ public class DataAccessObject implements InterfaceMetodos {
         try {
 
             c.connection();
-            ResultSet rs = c.obtener_datos("SELECT producto, precio from tbl_ordenes where n_orden = " + dvo.getToOrdenes_NumeroOrden() + ";");
+            ResultSet rs = c.obtener_datos("SELECT id, producto, precio from tbl_ordenes where n_orden = " + dvo.getToOrdenes_NumeroOrden() + ";");
 
             if (rs.next()) {
 
                 do {
-
-                    dvo.setFromOrdenes_producto(rs.getString(1));
-                    dvo.setFromOrdenes_precio(rs.getDouble(2));
+                    dvo.setFrom_Ordenes_IdOrden(rs.getInt(1));
+                    dvo.setFromOrdenes_producto(rs.getString(2));
+                    dvo.setFromOrdenes_precio(rs.getDouble(3));
 
                     datos.add(dvo);
 

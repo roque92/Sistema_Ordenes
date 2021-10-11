@@ -111,6 +111,7 @@ public class ControllerInicio {
         inicio.Inicio_BTN_Salchipapa.setEnabled(true);
         inicio.Inicio_BTN_Rollitos.setEnabled(true);
         inicio.Inicio_BTN_ConfirmarOrden.setVisible(true);
+        inicio.Inicio_BTN_ModificarCliente.setVisible(true);
     }
 
     public void DeshabilitarBotonoes() {
@@ -123,9 +124,10 @@ public class ControllerInicio {
         inicio.Inicio_BTN_Rollitos.setEnabled(false);
         inicio.Inicio_BTN_ConfirmarOrden.setVisible(false);
         inicio.Inicio_BTN_QuitarProducto.setVisible(false);
+        inicio.Inicio_BTN_ModificarCliente.setVisible(false);
     }
 
-    void ModificarCliente() {
+    public void ModificarCliente() {
         JOptionPane.showMessageDialog(null, "Accion Pendiente");
     }
 
