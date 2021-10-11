@@ -60,17 +60,16 @@ public class ControllerInicio {
         }
     }
 
-    public void RegistroCliente() {
-        registroCliente.setVisible(true);
-    }
-
     public void QuitarProducto() {
         JOptionPane.showMessageDialog(null, "Accion Pendiente");
     }
 
     public void ConfirmarOrden() {
         JOptionPane.showMessageDialog(null, "Accion Pendiente");
-
+    }
+    
+    public void ModificarCliente() {
+        JOptionPane.showMessageDialog(null, "Accion Pendiente");
     }
 
     public void MostrarDetalleOrden() {
@@ -101,6 +100,10 @@ public class ControllerInicio {
         n_orden = dataViewObject.getFromOrdenes_NumeroOrden();
         n_orden++;
     }
+    
+        public void RegistroCliente() {
+        registroCliente.setVisible(true);
+    }
 
     public void HabilitarBotones() {
         inicio.Inicio_BTN_Hamburguesa.setEnabled(true);
@@ -127,8 +130,6 @@ public class ControllerInicio {
         inicio.Inicio_BTN_ModificarCliente.setVisible(false);
     }
 
-    public void ModificarCliente() {
-        JOptionPane.showMessageDialog(null, "Accion Pendiente");
-    }
+    
 
 }
