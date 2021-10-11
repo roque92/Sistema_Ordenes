@@ -44,6 +44,7 @@ public class Controles implements ActionListener {
         this.inicio.Inicio_BTN_QuitarProducto.addActionListener(this);
         this.inicio.Inicio_BTN_ConfirmarOrden.addActionListener(this);
         this.inicio.Inicio_BTN_Cancelar.addActionListener(this);
+        this.inicio.Inicio_BTN_ModificarCliente.addActionListener(this);
 
         //Agregar Cliente
         this.registroCliente.Registro_BTN_Cancelar.addActionListener(this);
@@ -82,6 +83,10 @@ public class Controles implements ActionListener {
         }
         if (e.getSource() == inicio.Inicio_BTN_Cancelar) {
             controllerInicio.CancelarOrden();
+        }
+
+        if (e.getSource() == inicio.Inicio_BTN_ModificarCliente) {
+            controllerInicio.ModificarCliente();
         }
 
         //Registro Clientes 

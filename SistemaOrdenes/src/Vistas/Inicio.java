@@ -76,6 +76,7 @@ public class Inicio extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jLabel18 = new javax.swing.JLabel();
         Inicio_LBL_TotalCompra = new javax.swing.JLabel();
+        Inicio_BTN_ModificarCliente = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -443,6 +444,9 @@ public class Inicio extends javax.swing.JFrame {
         Inicio_LBL_TotalCompra.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Inicio_LBL_TotalCompra.setText("Q 0.00");
 
+        Inicio_BTN_ModificarCliente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Inicio_BTN_ModificarCliente.setText("Modificar Cliente");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -474,7 +478,8 @@ public class Inicio extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(Inicio_BTN_ModificarCliente)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Inicio_BTN_ConfirmarOrden))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -530,7 +535,8 @@ public class Inicio extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Inicio_BTN_QuitarProducto)
-                    .addComponent(Inicio_BTN_ConfirmarOrden))
+                    .addComponent(Inicio_BTN_ConfirmarOrden)
+                    .addComponent(Inicio_BTN_ModificarCliente))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -580,6 +586,7 @@ public class Inicio extends javax.swing.JFrame {
     public javax.swing.JButton Inicio_BTN_ConfirmarOrden;
     public javax.swing.JButton Inicio_BTN_CornDog;
     public javax.swing.JButton Inicio_BTN_Hamburguesa;
+    public javax.swing.JButton Inicio_BTN_ModificarCliente;
     public javax.swing.JButton Inicio_BTN_Nachos;
     public javax.swing.JButton Inicio_BTN_QuitarProducto;
     public javax.swing.JButton Inicio_BTN_RegistroCliente;

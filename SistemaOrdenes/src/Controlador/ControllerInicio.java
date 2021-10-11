@@ -125,4 +125,8 @@ public class ControllerInicio {
         inicio.Inicio_BTN_QuitarProducto.setVisible(false);
     }
 
+    void ModificarCliente() {
+        JOptionPane.showMessageDialog(null, "Accion Pendiente");
+    }
+
 }
