@@ -115,6 +115,9 @@ public class ControllerInicio {
         inicio.Inicio_BTN_Rollitos.setEnabled(true);
         inicio.Inicio_BTN_ConfirmarOrden.setVisible(true);
         inicio.Inicio_BTN_ModificarCliente.setVisible(true);
+        inicio.Inicio_TXT_DetalleOrden.setVisible(true);
+        inicio.Inicio_TBL_DetalleOrden.setVisible(true);
+        inicio.Inicio.setEnabled(true);
     }
 
     public void DeshabilitarBotonoes() {
@@ -128,6 +131,9 @@ public class ControllerInicio {
         inicio.Inicio_BTN_ConfirmarOrden.setVisible(false);
         inicio.Inicio_BTN_QuitarProducto.setVisible(false);
         inicio.Inicio_BTN_ModificarCliente.setVisible(false);
+        inicio.Inicio_TXT_DetalleOrden.setVisible(false);
+        inicio.Inicio_TBL_DetalleOrden.setVisible(false);
+        inicio.Inicio.setEnabled(false);
     }
 
     

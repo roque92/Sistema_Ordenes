@@ -73,7 +73,7 @@ public class Inicio extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        Inicio_TBL_DetalleOrden = new javax.swing.JTable();
         jLabel18 = new javax.swing.JLabel();
         Inicio_LBL_TotalCompra = new javax.swing.JLabel();
         Inicio_BTN_ModificarCliente = new javax.swing.JButton();
@@ -331,7 +331,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel17.setText("Detalle de Entrega");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        Inicio_TBL_DetalleOrden.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -438,7 +438,7 @@ public class Inicio extends javax.swing.JFrame {
                 "Title 1", "Title 2"
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(Inicio_TBL_DetalleOrden);
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel18.setText("Total Compra:");
@@ -596,6 +596,7 @@ public class Inicio extends javax.swing.JFrame {
     public javax.swing.JButton Inicio_BTN_Salchipapa;
     public javax.swing.JButton Inicio_BTN_Torito;
     public javax.swing.JLabel Inicio_LBL_TotalCompra;
+    public javax.swing.JTable Inicio_TBL_DetalleOrden;
     public javax.swing.JTextArea Inicio_TXT_DetalleOrden;
     public javax.swing.JTextField Inicio_TXT_Telefono;
     private javax.swing.JLabel jLabel1;
@@ -622,6 +623,5 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
