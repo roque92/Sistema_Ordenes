@@ -60,6 +60,8 @@ public class Inicio extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         Inicio_BTN_Nachos = new javax.swing.JButton();
         Inicio_BTN_Salchipapa = new javax.swing.JButton();
@@ -69,8 +71,6 @@ public class Inicio extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -110,7 +110,7 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setName(""); // NOI18N
 
-        Inicio_BTN_Hamburguesa.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Aplicaciones Java\\SistemaOrdenes\\image\\burger.png")); // NOI18N
+        Inicio_BTN_Hamburguesa.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Git Repositories\\Sistema_Ordenes\\SistemaOrdenes\\image\\burger.png")); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Hamburguesa");
@@ -118,14 +118,14 @@ public class Inicio extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Baguette");
 
-        Inicio_BTN_Baguette.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Aplicaciones Java\\SistemaOrdenes\\image\\baguette.png")); // NOI18N
+        Inicio_BTN_Baguette.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Git Repositories\\Sistema_Ordenes\\SistemaOrdenes\\image\\baguette.png")); // NOI18N
 
-        Inicio_BTN_Torito.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Aplicaciones Java\\SistemaOrdenes\\image\\torito.png")); // NOI18N
+        Inicio_BTN_Torito.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Git Repositories\\Sistema_Ordenes\\SistemaOrdenes\\image\\torito.png")); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Torito");
 
-        Inicio_BTN_CornDog.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Aplicaciones Java\\SistemaOrdenes\\image\\corn-dog.png")); // NOI18N
+        Inicio_BTN_CornDog.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Git Repositories\\Sistema_Ordenes\\SistemaOrdenes\\image\\corn-dog.png")); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Menu");
@@ -218,13 +218,41 @@ public class Inicio extends javax.swing.JFrame {
 
         Inicio.addTab("Almuerzos", jPanel1);
 
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 703, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 531, Short.MAX_VALUE)
+        );
+
+        Inicio.addTab("Bebidas", jPanel3);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 705, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 533, Short.MAX_VALUE)
+        );
+
+        Inicio.addTab("Otros", jPanel4);
+
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        Inicio_BTN_Nachos.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Aplicaciones Java\\SistemaOrdenes\\image\\nachos.png")); // NOI18N
+        Inicio_BTN_Nachos.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Git Repositories\\Sistema_Ordenes\\SistemaOrdenes\\image\\nachos.png")); // NOI18N
 
-        Inicio_BTN_Salchipapa.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Aplicaciones Java\\SistemaOrdenes\\image\\french-fries.png")); // NOI18N
+        Inicio_BTN_Salchipapa.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Git Repositories\\Sistema_Ordenes\\SistemaOrdenes\\image\\french-fries.png")); // NOI18N
 
-        Inicio_BTN_Rollitos.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Aplicaciones Java\\SistemaOrdenes\\image\\spring-rolls.png")); // NOI18N
+        Inicio_BTN_Rollitos.setIcon(new javax.swing.ImageIcon("A:\\Jose Roque\\Git Repositories\\Sistema_Ordenes\\SistemaOrdenes\\image\\spring-rolls.png")); // NOI18N
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setText("Nachos");
@@ -296,34 +324,6 @@ public class Inicio extends javax.swing.JFrame {
         );
 
         Inicio.addTab("Antojos", jPanel2);
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 703, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
-        );
-
-        Inicio.addTab("Bebidas", jPanel3);
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 705, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 533, Short.MAX_VALUE)
-        );
-
-        Inicio.addTab("Otros", jPanel4);
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel17.setText("Detalle de Entrega");

@@ -368,7 +368,7 @@
             <Component class="javax.swing.JButton" name="Inicio_BTN_Hamburguesa">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="A:\Jose Roque\Aplicaciones Java\SistemaOrdenes\image\burger.png"/>
+                  <Image iconType="2" name="A:\Jose Roque\Git Repositories\Sistema_Ordenes\SistemaOrdenes\image\burger.png"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -394,7 +394,7 @@
             <Component class="javax.swing.JButton" name="Inicio_BTN_Baguette">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="A:\Jose Roque\Aplicaciones Java\SistemaOrdenes\image\baguette.png"/>
+                  <Image iconType="2" name="A:\Jose Roque\Git Repositories\Sistema_Ordenes\SistemaOrdenes\image\baguette.png"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -404,7 +404,7 @@
             <Component class="javax.swing.JButton" name="Inicio_BTN_Torito">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="A:\Jose Roque\Aplicaciones Java\SistemaOrdenes\image\torito.png"/>
+                  <Image iconType="2" name="A:\Jose Roque\Git Repositories\Sistema_Ordenes\SistemaOrdenes\image\torito.png"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -422,7 +422,7 @@
             <Component class="javax.swing.JButton" name="Inicio_BTN_CornDog">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="A:\Jose Roque\Aplicaciones Java\SistemaOrdenes\image\corn-dog.png"/>
+                  <Image iconType="2" name="A:\Jose Roque\Git Repositories\Sistema_Ordenes\SistemaOrdenes\image\corn-dog.png"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -470,6 +470,57 @@
               </Properties>
             </Component>
           </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Bebidas">
+                <Property name="tabTitle" type="java.lang.String" value="Bebidas"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="703" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="531" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Otros">
+                <Property name="tabTitle" type="java.lang.String" value="Otros"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="705" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="533" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
@@ -563,7 +614,7 @@
             <Component class="javax.swing.JButton" name="Inicio_BTN_Nachos">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="A:\Jose Roque\Aplicaciones Java\SistemaOrdenes\image\nachos.png"/>
+                  <Image iconType="2" name="A:\Jose Roque\Git Repositories\Sistema_Ordenes\SistemaOrdenes\image\nachos.png"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -573,7 +624,7 @@
             <Component class="javax.swing.JButton" name="Inicio_BTN_Salchipapa">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="A:\Jose Roque\Aplicaciones Java\SistemaOrdenes\image\french-fries.png"/>
+                  <Image iconType="2" name="A:\Jose Roque\Git Repositories\Sistema_Ordenes\SistemaOrdenes\image\french-fries.png"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -583,7 +634,7 @@
             <Component class="javax.swing.JButton" name="Inicio_BTN_Rollitos">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="A:\Jose Roque\Aplicaciones Java\SistemaOrdenes\image\spring-rolls.png"/>
+                  <Image iconType="2" name="A:\Jose Roque\Git Repositories\Sistema_Ordenes\SistemaOrdenes\image\spring-rolls.png"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -631,57 +682,6 @@
               </Properties>
             </Component>
           </SubComponents>
-        </Container>
-        <Container class="javax.swing.JPanel" name="jPanel3">
-          <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
-              </Border>
-            </Property>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Bebidas">
-                <Property name="tabTitle" type="java.lang.String" value="Bebidas"/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="703" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="531" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-        </Container>
-        <Container class="javax.swing.JPanel" name="jPanel4">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Otros">
-                <Property name="tabTitle" type="java.lang.String" value="Otros"/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="705" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="533" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
         </Container>
       </SubComponents>
     </Container>
