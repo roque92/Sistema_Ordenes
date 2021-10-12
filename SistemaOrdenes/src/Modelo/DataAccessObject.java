@@ -97,8 +97,15 @@ public class DataAccessObject implements InterfaceMetodos {
     }
 
     @Override
-    public void eliminarOrden(DataViewObject dvo) {
-
+    public void eliminarProducto(DataViewObject dvo) {
+        Conector c = new Conector();
+        try {
+            c.connection();
+            c.consulta_general("DELETE FROM tbl_ordenes WHERE id = " +dvo.getToOrdenes_IdOrden() + ";");
+            c.desconectar();
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     @Override

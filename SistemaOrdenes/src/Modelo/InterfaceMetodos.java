@@ -34,7 +34,7 @@ public interface InterfaceMetodos {
     public void modificarOrden(DataViewObject dvo);
 
     //-----Eliminar
-    public void eliminarOrden(DataViewObject dvo);
+    public void eliminarProducto(DataViewObject dvo);
 
     //-----Mostrar
     public ArrayList<DataViewObject> mostrarOrden(DataViewObject dvo);

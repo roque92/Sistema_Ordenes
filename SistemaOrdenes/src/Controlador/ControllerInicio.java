@@ -26,7 +26,7 @@ public class ControllerInicio {
     DataViewObject dataViewObject = new DataViewObject();
     DataAccessObject dataAccessObject = new DataAccessObject();
 
-    public ControllerInicio(Inicio i, RegistroCliente rc, DataViewObject dvo, DataAccessObject dao) {
+    public ControllerInicio(Inicio i, RegistroCliente rc, DataViewObject dvo, DataAccessObject dao ) {
         this.inicio = i;
         this.registroCliente = rc;
         this.dataViewObject = dvo;
@@ -34,8 +34,9 @@ public class ControllerInicio {
 
     }
 
-    ControllerInicio() {
 
+    public ControllerInicio() {
+        
     }
 
     public void BuscarTelefono() {
@@ -58,10 +59,7 @@ public class ControllerInicio {
         }
     }
 
-    public void QuitarProducto() {
-        JOptionPane.showMessageDialog(null, "Accion Pendiente");
-    }
-
+   
     public void ConfirmarOrden() {
         JOptionPane.showMessageDialog(null, "Accion Pendiente");
     }
@@ -80,6 +78,37 @@ public class ControllerInicio {
                 + "*Correo Electronico:* " + dataViewObject.getFromCliente_correo() + "\n"
                 + "*Orden Numero:* QR-" + n_orden + "\n"
                 + "");
+    }
+    
+    void DetalleOrdern() {
+        try {
+
+            DefaultTableModel m = new DefaultTableModel();
+
+            m.setColumnCount(0);
+            m.addColumn("id");
+            m.addColumn("Producto");
+            m.addColumn("Precio");
+
+            for (DataViewObject dvo : this.dataAccessObject.mostrarOrden(dataViewObject)) {
+                m.addRow(new Object[]{dvo.getFromOrdenes_IdOrden(), dvo.getFromOrdenes_producto(), dvo.getFromOrdenes_precio()});
+            }
+
+            inicio.Inicio_TBL_DetalleOrden.setModel(m);
+
+            //hide a column
+            inicio.Inicio_TBL_DetalleOrden.getColumnModel().getColumn(0).setMinWidth(0);
+            inicio.Inicio_TBL_DetalleOrden.getColumnModel().getColumn(0).setMaxWidth(0);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "No se puede conectar con la base de datos Contacte con su Administrador", "Problemas de Conexion", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+    
+     public void QuitarProducto() {
+        dataAccessObject.eliminarProducto(dataViewObject);
+        DetalleOrdern();
+        TotalOrden();
     }
 
     public void TotalOrden() {
@@ -133,7 +162,4 @@ public class ControllerInicio {
         inicio.Inicio_TBL_DetalleOrden.setVisible(false);
         inicio.Inicio.setEnabled(false);
     }
-
-    
-
 }

@@ -32,10 +32,10 @@ public class QueRicoHamburguesas {
         DataViewObject dataViewObject = new DataViewObject();
         DataAccessObject dataAccessObject = new DataAccessObject();
         
-        
         ControllerInicio controllerInicio = new ControllerInicio(inicio, registroClientes, dataViewObject, dataAccessObject);
-        ControllerRegistroCliente controllerRegistroCliente = new ControllerRegistroCliente(registroClientes, dataViewObject, dataAccessObject, inicio, controllerInicio);
         ControllerProducto controllerProducto = new ControllerProducto(dataViewObject, dataAccessObject, inicio, controllerInicio);
+        ControllerRegistroCliente controllerRegistroCliente = new ControllerRegistroCliente(registroClientes, dataViewObject, dataAccessObject, inicio, controllerInicio);
+        
         Controles controles = new Controles(inicio, registroClientes, dataViewObject, controllerInicio, controllerRegistroCliente, controllerProducto);
 
         

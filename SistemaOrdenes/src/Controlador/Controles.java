@@ -10,12 +10,13 @@ import Vistas.Inicio;
 import Vistas.RegistroCliente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseListener;
 
 /**
  *
  * @author Jose Roque
  */
-public class Controles implements ActionListener {
+public class Controles implements ActionListener, MouseListener {
 
     Inicio inicio = new Inicio();
     RegistroCliente registroCliente = new RegistroCliente();
@@ -41,6 +42,7 @@ public class Controles implements ActionListener {
         this.inicio.Inicio_BTN_ConfirmarOrden.addActionListener(this);
         this.inicio.Inicio_BTN_Cancelar.addActionListener(this);
         this.inicio.Inicio_BTN_ModificarCliente.addActionListener(this);
+        this.inicio.Inicio_TBL_DetalleOrden.addMouseListener(this);
 
         //Agregar Cliente
         this.registroCliente.Registro_BTN_Cancelar.addActionListener(this);
@@ -111,6 +113,37 @@ public class Controles implements ActionListener {
             controllerProducto.Rollito();
         }
 
+    }
+    
+    @Override
+    public void mouseClicked(java.awt.event.MouseEvent e) {
+        int rowNumber = inicio.Inicio_TBL_DetalleOrden.getSelectedRow();
+        
+        dataViewObject.setToOrdenes_IdOrden(Integer.parseInt(inicio.Inicio_TBL_DetalleOrden.getValueAt(rowNumber, 0).toString()));
+
+        
+        inicio.Inicio_BTN_QuitarProducto.setVisible(true);
+
+    }
+
+    @Override
+    public void mousePressed(java.awt.event.MouseEvent e) {
+        
+    }
+
+    @Override
+    public void mouseReleased(java.awt.event.MouseEvent e) {
+        
+    }
+
+    @Override
+    public void mouseEntered(java.awt.event.MouseEvent e) {
+        
+    }
+
+    @Override
+    public void mouseExited(java.awt.event.MouseEvent e) {
+        
     }
 
 }

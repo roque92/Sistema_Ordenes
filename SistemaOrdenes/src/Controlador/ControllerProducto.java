@@ -10,8 +10,6 @@ import Modelo.DataViewObject;
 import Vistas.Inicio;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -53,9 +51,9 @@ public class ControllerProducto {
         dataViewObject.setToOrdenes_precio(40.00);
         dataViewObject.setToOrdenes_telefono(Integer.parseInt(inicio.Inicio_TXT_Telefono.getText()));
         dataViewObject.setToOrdenes_NumeroOrden(dataViewObject.getFromOrdenes_NumeroOrden() + 1);
-        
+
         dataAccessObject.crearOrden(dataViewObject);
-        DetalleOrdern();
+        controllerInicio.DetalleOrdern();
         controllerInicio.TotalOrden();
 
     }
@@ -73,9 +71,9 @@ public class ControllerProducto {
         dataViewObject.setToOrdenes_precio(40.00);
         dataViewObject.setToOrdenes_telefono(Integer.parseInt(inicio.Inicio_TXT_Telefono.getText()));
         dataViewObject.setToOrdenes_NumeroOrden(dataViewObject.getFromOrdenes_NumeroOrden() + 1);
-        
+
         dataAccessObject.crearOrden(dataViewObject);
-        DetalleOrdern();
+        controllerInicio.DetalleOrdern();
         controllerInicio.TotalOrden();
 
     }
@@ -93,9 +91,9 @@ public class ControllerProducto {
         dataViewObject.setToOrdenes_precio(35.00);
         dataViewObject.setToOrdenes_telefono(Integer.parseInt(inicio.Inicio_TXT_Telefono.getText()));
         dataViewObject.setToOrdenes_NumeroOrden(dataViewObject.getFromOrdenes_NumeroOrden() + 1);
-        
+
         dataAccessObject.crearOrden(dataViewObject);
-        DetalleOrdern();
+        controllerInicio.DetalleOrdern();
         controllerInicio.TotalOrden();
 
     }
@@ -113,9 +111,9 @@ public class ControllerProducto {
         dataViewObject.setToOrdenes_precio(35.00);
         dataViewObject.setToOrdenes_telefono(Integer.parseInt(inicio.Inicio_TXT_Telefono.getText()));
         dataViewObject.setToOrdenes_NumeroOrden(dataViewObject.getFromOrdenes_NumeroOrden() + 1);
-        
+
         dataAccessObject.crearOrden(dataViewObject);
-        DetalleOrdern();
+        controllerInicio.DetalleOrdern();
         controllerInicio.TotalOrden();
 
     }
@@ -133,9 +131,9 @@ public class ControllerProducto {
         dataViewObject.setToOrdenes_precio(30.00);
         dataViewObject.setToOrdenes_telefono(Integer.parseInt(inicio.Inicio_TXT_Telefono.getText()));
         dataViewObject.setToOrdenes_NumeroOrden(dataViewObject.getFromOrdenes_NumeroOrden() + 1);
-        
+
         dataAccessObject.crearOrden(dataViewObject);
-        DetalleOrdern();
+        controllerInicio.DetalleOrdern();
         controllerInicio.TotalOrden();
 
     }
@@ -152,9 +150,9 @@ public class ControllerProducto {
         dataViewObject.setToOrdenes_precio(25.00);
         dataViewObject.setToOrdenes_telefono(Integer.parseInt(inicio.Inicio_TXT_Telefono.getText()));
         dataViewObject.setToOrdenes_NumeroOrden(dataViewObject.getFromOrdenes_NumeroOrden() + 1);
-        
+
         dataAccessObject.crearOrden(dataViewObject);
-        DetalleOrdern();
+        controllerInicio.DetalleOrdern();
         controllerInicio.TotalOrden();
 
     }
@@ -171,30 +169,11 @@ public class ControllerProducto {
         dataViewObject.setToOrdenes_precio(25.00);
         dataViewObject.setToOrdenes_telefono(Integer.parseInt(inicio.Inicio_TXT_Telefono.getText()));
         dataViewObject.setToOrdenes_NumeroOrden(dataViewObject.getFromOrdenes_NumeroOrden() + 1);
-        
+
         dataAccessObject.crearOrden(dataViewObject);
-        DetalleOrdern();
+        controllerInicio.DetalleOrdern();
         controllerInicio.TotalOrden();
 
     }
-    
-    void DetalleOrdern(){
-        try{
-            
-            DefaultTableModel m = new DefaultTableModel();
-            m.setColumnCount(0);
-            m.addColumn("Producto");
-            m.addColumn("Precio");
-            
-            for(DataViewObject dvo : this.dataAccessObject.mostrarOrden(dataViewObject)){
-                m.addRow(new Object[]{ dvo.getFromOrdenes_producto(), dvo.getFromOrdenes_precio() });
-            }
-            
-            inicio.Inicio_TBL_DetalleOrden.setModel(m);
-            
-        } catch(Exception e){
-            JOptionPane.showMessageDialog(null, "No se puede conectar con la base de datos Contacte con su Administrador", "Problemas de Conexion", JOptionPane.ERROR_MESSAGE);
-        }
-    }
-   
+
 }
