@@ -10,6 +10,7 @@ import Modelo.DataViewObject;
 import Vistas.Inicio;
 import Vistas.RegistroCliente;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 import org.apache.commons.lang.NumberUtils;
 
 /**

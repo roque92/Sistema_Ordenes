@@ -8,7 +8,6 @@ package Modelo;
 import java.util.ArrayList;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -113,20 +112,14 @@ public class DataAccessObject implements InterfaceMetodos {
             c.connection();
             ResultSet rs = c.obtener_datos("SELECT id, producto, precio from tbl_ordenes where n_orden = " + dvo.getToOrdenes_NumeroOrden() + ";");
 
-            if (rs.next()) {
+            while (rs.next()) {
 
-                do {
-                    dvo.setFrom_Ordenes_IdOrden(rs.getInt(1));
-                    dvo.setFromOrdenes_producto(rs.getString(2));
-                    dvo.setFromOrdenes_precio(rs.getDouble(3));
-
-                    datos.add(dvo);
-
-                } while (rs.next());
-
-            } else {
-
-                System.out.println("No hay existen ordenes");
+                DataViewObject dvo1 = new DataViewObject();
+                dvo1.setFromOrdenes_IdOrden(rs.getInt(1));
+                dvo1.setFromOrdenes_producto(rs.getString(2));
+                dvo1.setFromOrdenes_precio(rs.getDouble(3));
+                
+                datos.add(dvo1);
 
             }
 
